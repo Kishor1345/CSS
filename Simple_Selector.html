@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple_Selector</title>
     <style>
+        /* ID Selector(#) */
         #Demo1{
             background-color: black;
             color:white;
@@ -17,6 +18,21 @@
             background-color: aquamarine;
             color: blueviolet;
         }
+        /* CLASS Selector(.) */
+        .cls{
+            background-color: lightcoral;
+            color: paleturquoise;
+        }
+        /* Tag Selector */
+        span{
+            background-color: aquamarine;
+            color: blue;
+        }
+        /* GROUPING Selector*/
+        div,p,h1,h2{
+            background-color: black;
+            color:white;
+        }
     </style>
 </head>
 <body>
@@ -24,5 +40,27 @@
     <h1 id="Demo1">HTML</h1>
     <h1 id="Demo2">CSS</h1>
     <h1 id="Demo3">JS</h1>
+
+    <hr>
+    <!--CLASS Selector(.)-->
+    <p class="cls">Java Script</p>
+    <h1 class="cls">Java Script</h1>
+    <h2 class="cls">Java Script</h2>
+    <div class="cls">Java Script</div>
+
+    <hr>
+    <!--TAG Selector(TAG NAME)-->
+    <span>DJANGO</span>
+
+    <hr>
+    <!--GROUPING Selector(,)-->
+    <div>HELLO KISHORE</div>
+    <p>HELLO KISHORE</p>
+    <h1>HELLO KISHORE</h1>
+    <h2>HELLO KISHORE</h2>
+
+    <hr>
+    <!--UNIVERSAL Selector(*)-->
+    
 </body>
 </html>
