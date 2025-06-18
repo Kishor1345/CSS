@@ -13,6 +13,14 @@
             color:red;
             background-color: lightcoral;
         }
+        .demo1>h1+h2+h3{
+            color: red;
+            background-color: aqua;
+        }
+        h1~h2{
+            color:yellow;
+            background-color: aquamarine;
+        }
     </style>
 </head>
 <body>
@@ -41,11 +49,17 @@
     </div>
     <hr>
     <!--Adjacent Sibling Selector(+)-->
-    <div>
+    <div class="demo1">
         <h1>Kishore</h1>
         <h2>Thirupathi</h2>
         <h3>Vigneshwaran</h3>
         <h4>Roshan</h4>
     </div>
+    <hr>
+    <!--General Sibling Selector-->
+    <h1>HELLO WORLD</h1>
+    <h2>HELLO WORLD</h2>
+    <h2>HELLO WORLD</h2>
+    <p>HELLO WORLD</p>
 </body>
 </html>
