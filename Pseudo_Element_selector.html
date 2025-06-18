@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo_Element_selector</title>
+    <style>
+        h1::first-letter{
+            color: blue;
+            font-size: 50px;
+        }
+        h2::first-line{
+            color: aqua;
+        }
+        h3::before{
+            content:"😍HELLO";
+        }
+        p::after{
+            content: "👌";
+        }
+        ul>li::marker{
+            content: "😊";
+        }
+        h4::selection{
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!--Pseudo element(::)-->
+    <!--First_letter-->
+    <h1>KISHORE</h1>
+    <hr>
+    <!--First_Line-->
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, asperiores facere error sit ea impedit doloribus! Culpa, at, voluptate laudantium recusandae deserunt unde, laborum quaerat eius reiciendis in molestiae quibusdam id sit nemo quo ipsa autem voluptatum dolore. Quaerat labore autem blanditiis enim temporibus nulla adipisci, optio nemo magnam consequuntur.</h2>
+    <hr>
+    <!--Before-->
+    <h3>WORLD</h3>
+    <hr>
+    <!--After-->
+    <p>Lorem ipsum dolor sit amet.</p>
+    <hr>
+    <ul>
+        <li>QSPIDERS</li>
+        <li>QSPIDERS</li>
+    </ul>
+    <hr>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aut nemo, mollitia odio quo itaque aliquid ut vero magni quis debitis omnis veniam necessitatibus inventore architecto facilis perspiciatis porro tenetur.</h4>
+</body>
+</html>
