@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator_selector</title>
+    <style>
+        div p{
+            color:white;
+            background-color: blue;
+        }
+        #parent>p{
+            color:red;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <!--Descendant selector(_Space)-->
+    <div>
+        <p>Kishore</p>
+        <p>Thirupathi</p>
+        <span>
+            <p>Vicky</p>
+        </span>
+        <span>
+            <p>Roshan</p>
+        </span>
+    </div>
+    <hr>
+    <!--Child Selector (+)-->
+    <div id="parent">
+        <p>Kishore</p>
+        <p>Thirupathi</p>
+        <span>
+            <p>Vicky</p>
+        </span>
+        <span>
+            <p>Roshan</p>
+        </span>
+    </div>
+    <hr>
+    <!--Adjacent Sibling Selector(+)-->
+    <div>
+        <h1>Kishore</h1>
+        <h2>Thirupathi</h2>
+        <h3>Vigneshwaran</h3>
+        <h4>Roshan</h4>
+    </div>
+</body>
+</html>
