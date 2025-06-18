@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_in_Child_Selector</title>
+    <style>
+        div>h1{
+            color: blue;
+            background-color: pink;
+        }
+        div>h2{
+            color:red;
+            background-color: bisque;
+        }
+        div>span>h2{
+            color:lightgreen;
+            background-color: brown;
+        }
+        div>span>h3{
+            color:lightseagreen;
+            background-color: purple;
+        }
+        .demo>h1{
+            color: aqua;
+            background-color: blue;
+        }
+        .demo>h2{
+            color:brown;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>FAMILY MEMBERS</h1>
+    <div>
+        <h1>FATHER</h1>
+        <h2>MOTHER</h2>
+        <span>
+            <h2>YOUNGER BROTHER</h2>
+        </span>
+        <span>
+            <h3>ELDER BROTHER</h3>
+        </span>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <div class="demo">
+        <h1>JAVA</h1>
+        <h2>PYTHON</h2>
+        <h1>SQL</h1>
+        <h2>JAVA-SCRIPT</h2>
+    </div>
+</body>
+</html>
