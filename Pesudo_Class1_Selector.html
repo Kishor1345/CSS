@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesudo_Class1_Selector</title>
+    <style>
+        .container-1 >h1:first-child{
+        color:red;
+    }
+    .container-2>p:last-child{
+        color: lightgreen;
+    }
+    .container-3> :nth-child(odd){
+        color: lightcoral;
+    }
+    .container-4>h1:first-of-type{
+        color: blue;
+    }
+    .container-5>h1:last-of-type{
+        color: limegreen;
+    }
+    </style>
+</head>
+<body>
+    <!--Structural Pesudo Class Selector-->
+    <!--First_child-->
+    <div class="container-1">
+        <h1>KISHORE FIRST_CHILD</h1>
+        <h1>KISHORE</h1>
+        <h1>KISHORE</h1>
+        <h1>KISHORE</h1>
+    </div>
+    <hr>
+    <!--Last_child-->
+    <div class="container-2">
+        <p>FATHER</p>
+        <p>FATHER</p>
+        <p>FATHER</p>
+        <p>FATHER LAST_CHILD</p>
+    </div>
+    <hr>
+    <!--nth_child-->
+    <div class="container-3">
+        <h1>HP-PAVILION ODD</h1>
+        <h2>HP-PAVILION</h2>
+        <p>HP-PAVILION ODD</p>
+        <h4>HP-PAVILION</h4>
+        <h6>HP-PAVILION ODD</h6>
+    </div>
+    <hr>
+    <div class="container-4">
+        <h2>KISHORE</h2>
+        <h1>KISHORE FIRST_OF_TYPE</h1>
+        <h2>KISHORE</h2>
+        <h1>KISHORE</h1>
+    </div>
+    <hr>
+    <div class="container-5">
+        <h1>DINESH</h1>
+        <h2>DINESH</h2>
+        <h1>DINESH</h1>
+        <h1>DINESH LAST_OF_TYPE</h1>
+    </div>
+</body>
+</html>
