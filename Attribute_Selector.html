@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute_Selector</title>
+    <style>
+        /* [title]{
+            color: aqua;
+            background-color: black;
+        }
+        [title="para"]{
+            color: lightblue;
+            background-color: black;
+        }
+        [title~="contain"]{
+            color: aquamarine;
+            background-color: black;
+        } */
+         /* [title|="para"]{
+            color: rgb(64, 18, 18);
+            background-color: rgb(58, 58, 136);
+         } */
+          /* [title^="para"]{
+            color:blueviolet;
+            background-color: blue;
+          } */
+           /* [title$="para"]{
+            color: rgb(170, 7, 192);
+            background-color: rgb(221, 255, 4);
+           } */
+            [title*="sample"]{
+                color: blueviolet;
+                background-color: brown;
+            }
+    </style>
+</head>
+<body>
+    <!--ATTRIBUTE NAME-->
+    <p title="para">HELLO</p>
+    <p id="demo">HELLO</p>
+    <p title="para">HELLO</p>
+    <hr>
+    <!--ATTRIBUTE="VALUE"-->
+    <p title="para">WORLD</p>
+    <p title="sample">WORLD</p>
+    <p title="para">WORLD</p>
+    <p title="sample">WORLD</p>
+    <hr>
+    <!--ATTRIBUTE ~="VALUE"-->
+    <p title=" contain">KISHORE</p>
+    <p title="para">KISHORE</p>
+    <p title="contain">KISHORE</p>
+    <p title="contain">KISHORE</p>
+    <hr>
+    <!--ATTRIBUTE |="VALUE"-->
+    <p title="para-">DINESH</p>
+    <p title="para">DINESH</p>
+    <p title="para-graph">DINESH</p>
+    <p title="-para">DINESH</p>
+    <hr>
+    <!--ATTRIBUTE ^="VALUE"-->
+    <p title=" para ">ROSHAN</p>
+    <p title="para">ROSHAN</p>
+    <p title=" para">ROSHAN</p>
+    <p title="para ">ROSHAN</p>
+    <hr>
+    <!--ATTRIBUTE $="VALUE"-->
+    <p title="para ">THIRUPATHI</p>
+    <p title="para">THIRUPATHI</p>
+    <p title="para">THIRUPATHI</p>
+    <p title="para ">THIRUPATHI</p>
+    <hr>
+    <!--ATTRIBUTE *="VALUE"-->
+    <p title="sample ">KGF</p>
+    <p title=" sample">KGF</p>
+    <p title="sample-">KGF</p>
+    <p title=" sample">KGF</p>
+</body>
+</html>
