@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient</title>
+    <style>
+        #demo{
+            height: 100px;
+            width: 100px;
+            border: 1px solid rgb(98, 0, 60);
+            background:linear-gradient(to bottom ,rgb(36, 8, 8),rgb(6, 75, 6),rgb(204, 6, 131),rgb(100,200,255));
+            background: repeating-linear-gradient(black 10%,red 20%,blue 50%);
+         }
+         #demo1{
+            margin-top: 20px;
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            background: radial-gradient(rgb(69, 11, 11),rgb(127, 19, 19),rgb(73, 143, 73));
+            background: repeating-radial-gradient(red 30%,yellow 40%,green 50%);
+         }
+    </style>
+</head>
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+</body>
+</html>
